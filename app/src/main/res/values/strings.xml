@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">DicodingStory</string>
+    <string name="signup">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="message_welcome_page">Wanna share your exciting moments with many people? Just on the story app!</string>
+    <string name="title_welcome_page">Welcome to Story App!</string>
+    <string name="title_signup_page">Please enter your data</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Please enter your data</string>
+    <string name="title_login_page">Ready For Share Your Best Moment?</string>
+    <string name="name">Nama</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="greeting">Enjoy Your Moment!</string>
+    <string name="logout">Keluar</string>
+    <string name="password_hint">Enter password</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="name_hint">Enter your name</string>
+    <string name="password_set">Password must at least have 8 characters</string>
+    <string name="email_set_space">Email cannot have spaces</string>
+    <string name="email_set_char">Email contains invalid characters</string>
+    <string name="email_set_empty">Email can not empty</string>
+    <string name="fill_all">Please Fill All The Blank</string>
+    <string name="empty_image_warning">Error: Image URI not found</string>
+    <string name="upload_story">Share Your Moment With Us</string>
+    <string name="detail_story">Detail Story</string>
+    <string name="detail_gambar">ini detail gambar</string>
+    <string name="add">add</string>
+    <string name="galery">Galery</string>
+    <string name="camera">Camera</string>
+    <string name="note">Type Your Story Here</string>
+    <string name="add_desc">Add</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="logout_text">Are you sure you want to logout?</string>
+</resources>

@@ -1,0 +1,28 @@
+package com.fifahkhirnnsa.dicodingstory.ui.main
+
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import androidx.lifecycle.viewModelScope
+import androidx.paging.PagingData
+import androidx.paging.cachedIn
+import com.fifahkhirnnsa.dicodingstory.data.UserRepository
+import com.fifahkhirnnsa.dicodingstory.data.database.ListItemStory
+import com.fifahkhirnnsa.dicodingstory.data.pref.UserModel
+import kotlinx.coroutines.launch
+
+class MainViewModel(private val repository: UserRepository) : ViewModel() {
+
+    val stories: LiveData<PagingData<ListItemStory>> =
+        repository.getStories().cachedIn(viewModelScope)
+
+    fun getSession(): LiveData<UserModel> {
+        return repository.getSession().asLiveData()
+    }
+
+    fun logout() {
+        viewModelScope.launch {
+            repository.logout()
+        }
+    }
+}
